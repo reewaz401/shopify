@@ -6,15 +6,15 @@
 <div v-if="product"  class="product-details">
 <h3 class="text-center">{{product.name}}</h3>
 <p class="text-center">{{product.description}}</p>
-<h3 class = "text-center">${{product.price.toFixed(2)}}</h3>
+<h3 class = "text-center">€ {{product.price.toFixed(2)}}</h3>
 
 <div class="cart-total" v-if="product_total">
 <h3>In Cart</h3>
 <h4>{{product_total}}</h4></div>
 
  <div class="button-container">
-    <button class="remove" @click="removeFromCart()">Remove</button>
-    <button class="add" @click="addToCart()">Add</button>
+    <button class="remove" @click="removeFromCart()">Supprime</button>
+    <button class="add" @click="addToCart()">Ajoute</button>
  </div>
  </div>
 </div>

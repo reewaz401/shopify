@@ -2,11 +2,11 @@
 <div class="card">
     <h3>{{product.product_name}}</h3>
 
-    <h5 class = "price"> Price: ${{product.price.toFixed(2)}}</h5>
+    <h5 class = "price"> Prix: € {{product.price.toFixed(2)}}</h5>
     <p class="description">Description: {{product.description}}</p>
     <p class ="text-muted">{{product.category}}</p>
     <button class ="view-product-button" @click="$emit('view-product',product)">
-        View
+        Affiche
     </button>
 </div>
 

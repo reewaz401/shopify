@@ -1,15 +1,15 @@
 <template>
 <canvas id="myChart" width="400" height="400"></canvas>
-
+<div class="table-responsive">
 <table class="table">
   <thead>
     <tr>
       <th scope="col">Sn.</th>
       <th scope="col">Id</th>
-      <th scope="col">Product</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Buy Date</th>
+      <th scope="col">Item</th>
+      <th scope="col">Prix</th>
+      <th scope="col">Quantité</th>
+      <th scope="col">Date du commande</th>
     </tr>
   </thead>
   <tbody>
@@ -23,6 +23,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 </template>
 
 <script>
@@ -53,6 +54,10 @@ items:[]
 </script>
 
 <style lang="scss">
+table{
+  width:100vw;
+}
+
 canvas {
   max-height: 40vh;
 

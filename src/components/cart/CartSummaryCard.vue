@@ -1,7 +1,7 @@
 <template>
 <div class="cart-item-card">
     <div class="cart-summary">
-          <h3>Card Total: ${{cart_total.toFixed(2)}}</h3>
+          <h3>Montant: ${{cart_total.toFixed(2)}}</h3>
     <button class="view-product-button" @click="requestHere()"> {{isDone}}</button>
 
     </div>
@@ -27,7 +27,7 @@ return this.$store.getters.cartTotal;
     },
 data (){
 return{
-isDone:"Pay",
+isDone:"Payer",
 }
 }
 }
